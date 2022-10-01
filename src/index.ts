@@ -1,7 +1,7 @@
-import express from 'express';
-import { AppDataSourse } from './data-sourse';
+import express from 'express'
+import { AppDataSource } from './data-source';
 
-AppDataSourse.initialize().then(() => {
+AppDataSource.initialize().then(() => {
 
   const app = express()
 

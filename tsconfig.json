@@ -1,7 +1,7 @@
 {
 	"compilerOptions": { // Opções de compilação de todo código
-		"target": "es2018",  // Versão do código JavaScript que será gerado 
-		"lib": ["es5", "es6", "ES2018"], 
+		"target": "ES2022",  // Versão do código JavaScript que será gerado 
+		"lib": ["es5", "es6", "ES2022"], 
 		"experimentalDecorators": true, // Obrigatorio para usar o TypeORM
 		"emitDecoratorMetadata": true, // Obrigatorio para usar o TypeORM
 		"module": "commonjs",

@@ -9,7 +9,7 @@ export class Product {
   @Column({type: 'text'})
   name: string
 
-  @Column({type: 'number'})
+  @Column({type: Number})
   partNumber: number
 
   @Column({type: 'text'})
