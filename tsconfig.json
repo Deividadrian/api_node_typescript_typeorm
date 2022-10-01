@@ -1,0 +1,23 @@
+{
+	"compilerOptions": { // Opções de compilação de todo código
+		"target": "es2018",  // Versão do código JavaScript que será gerado 
+		"lib": ["es5", "es6", "ES2018"], 
+		"experimentalDecorators": true, // Obrigatorio para usar o TypeORM
+		"emitDecoratorMetadata": true, // Obrigatorio para usar o TypeORM
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"outDir": "./dist", // Nome da pasta que será gerado o código JavaScrip
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictPropertyInitialization": false // Se utilizar TypeORM esse script vai obrigar a definir o valor de cada atributo dentro de um metodo construtor
+	},
+	"include": ["src/**/*"], // Inclui todos os diretorios e arquivos ques estão dentro da pasta src
+	"exclude": ["node_modules", "dist"], // Exclui a pasta node_modules e a pasta dist
+	"ts-node": {
+		"files": true // Ajuda na validação do "include" e do "exclude"
+	}
+}
