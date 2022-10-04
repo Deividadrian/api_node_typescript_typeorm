@@ -1,5 +1,6 @@
+import { Ovm } from './Ovm';
 import { Product } from './Product';
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToMany } from 'typeorm';
 
 @Entity('clients')
 export class Client {
@@ -11,5 +12,8 @@ export class Client {
 
   @OneToMany(() => Product, (product) => product.client )
   products: Product[]
+
+  @ManyToMany(() => Client, client => client.ovms)
+  ovms: Ovm[]
 
 }
