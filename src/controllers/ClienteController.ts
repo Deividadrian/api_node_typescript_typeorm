@@ -6,7 +6,7 @@ export class ClientController {
     const { name } = req.body
     
     if(!name) {
-      return res.status(400).json({mesagem: "O nome é obrigatório"})
+      return res.status(400).json({mesagem: "The name is mandatory"})
     }
 
     try {

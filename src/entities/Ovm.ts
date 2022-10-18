@@ -3,7 +3,7 @@ import { Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn } from 't
 
 @Entity('ovms')
 export class Ovm {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: number
 
   @Column({type: 'text'})

@@ -4,7 +4,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToMany } from 't
 
 @Entity('clients')
 export class Client {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: number
 
   @Column({type: 'text'})
